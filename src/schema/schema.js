@@ -7,6 +7,9 @@ const schema = yup.object({
 firstname:yup.string("Must be String")
         .required("Please enter Firstname")
         .matches(/^[aA-zZ\s]+$/, "Only alphabets are allowed"),
+lastname:yup.string("Must be String")
+         .required("Please enter Lastname")
+         .matches(/^[aA-zZ\s]+$/, "Only alphabets are allowed"),
 
 donationamount:yup.string(),
         
