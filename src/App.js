@@ -14,7 +14,7 @@ import Submit from "./components/Submit";
 
 const INITIAL_VALUES = {
   salution: 'Mr',
-  firstname:'karthik'
+  firstname:''
 }
 
 function App() {
@@ -33,7 +33,7 @@ const onSubmit = (data) => {
   return (
     <FormProvider {...methods} >
       <form onSubmit={methods.handleSubmit(onSubmit)}>
-      <Header />
+      {/* <Header /> */}
       <PersonalInformation />
        <Packages />
       {/*<Registration />*/}
